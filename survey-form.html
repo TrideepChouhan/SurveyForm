@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey-Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a883aaf29d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <form>
+        <div class="form-group">
+          <label for="Name" class="font-weight-bold">Name</label>
+          <span class="text-danger">*</span>
+          <div class="row">
+            <div class="col-4">
+              <input type="text" class="form-control" id="firstName" required />
+              <small id="nameHelp" class="form-text text-muted">First</small>
+            </div>
+            <div class="col-4">
+              <input type="text" class="form-control" id="lastName" />
+              <small id="nameHelp" class="form-text text-muted">Last</small>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email" class="font-weight-bold">Email</label>
+          <span class="text-danger">*</span>
+          <input type="email" class="form-control col-8" id="email" required />
+        </div>
+        <div class="form-group">
+          <label for="experience" class="font-weight-bold"
+            >Your Experience</label
+          >
+          <span class="text-danger">*</span>
+          <div>
+            <i class="fas fa-star fa-lg text-warning"></i>
+            <i class="fas fa-star fa-lg text-warning"></i>
+            <i class="fas fa-star fa-lg text-warning"></i>
+            <i class="fas fa-star fa-lg text-warning"></i>
+            <i class="fas fa-star fa-lg text-warning"></i>
+          </div>
+          <p>Overall, how would you rate your experience with us?</p>
+        </div>
+        <div class="form-group">
+          <label for="experience" class="font-weight-bold"
+            >How satisfied are you with</label
+          ><span class="text-danger">*</span>
+          <table class="table table-striped table-borderless text-center">
+            <thead>
+              <tr>
+                <th class="font-weight-light" scope="col"></th>
+                <th class="font-weight-light" scope="col">Very Unsatisfied</th>
+                <th class="font-weight-light" scope="col">Unsatisfied</th>
+                <th class="font-weight-light" scope="col">Neutral</th>
+                <th class="font-weight-light" scope="col">Satisfied</th>
+                <th class="font-weight-light" scope="col">Very Satisfied</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="font-weight-light text-left" scope="row">
+                  Purchase
+                </th>
+                <td><input type="radio" /></td>
+                <td><input type="radio" /></td>
+                <td><input type="radio" /></td>
+                <td><input type="radio" /></td>
+                <td><input type="radio" /></td>
+              </tr>
+              <tr>
+                <th class="font-weight-light text-left" scope="row">Service</th>
+                <td><input type="radio" /></td>
+                <td><input type="radio" /></td>
+                <td><input type="radio" /></td>
+                <td><input type="radio" /></td>
+                <td><input type="radio" /></td>
+              </tr>
+              <tr>
+                <th class="font-weight-light text-left" scope="row">
+                  Company Overall
+                </th>
+                <td><input type="radio" /></td>
+                <td><input type="radio" /></td>
+                <td><input type="radio" /></td>
+                <td><input type="radio" /></td>
+                <td><input type="radio" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="form-group">
+          <label for="experience" class="font-weight-bold"
+            >How likely are you to</label
+          ><span class="text-danger">*</span>
+          <table class="table table-striped table-borderless text-center">
+            <thead>
+              <tr>
+                <th class="font-weight-light" scope="col"></th>
+                <th class="font-weight-light" scope="col">Very Unsatisfied</th>
+                <th class="font-weight-light" scope="col">Unsatisfied</th>
+                <th class="font-weight-light" scope="col">Neutral</th>
+                <th class="font-weight-light" scope="col">Satisfied</th>
+                <th class="font-weight-light" scope="col">Very Satisfied</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="font-weight-light text-left" scope="row">
+                  Buy from us again
+                </th>
+                <td><input type="radio" /></td>
+                <td><input type="radio" /></td>
+                <td><input type="radio" /></td>
+                <td><input type="radio" /></td>
+                <td><input type="radio" /></td>
+              </tr>
+              <tr>
+                <th class="font-weight-light text-left" scope="row">
+                  Recommend our product to others
+                </th>
+                <td><input type="radio" /></td>
+                <td><input type="radio" /></td>
+                <td><input type="radio" /></td>
+                <td><input type="radio" /></td>
+                <td><input type="radio" /></td>
+              </tr>
+              <tr>
+                <th class="font-weight-light text-left text-left" scope="row">
+                  Recommend our company to others
+                </th>
+                <td><input type="radio" /></td>
+                <td><input type="radio" /></td>
+                <td><input type="radio" /></td>
+                <td><input type="radio" /></td>
+                <td><input type="radio" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="form-group">
+          <label for="comments" class="font-weight-bold"
+            >Additional comments or suggestions</label
+          >
+          <textarea class="form-control" id="comments" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn btn-secondary">Submit</button>
+      </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
